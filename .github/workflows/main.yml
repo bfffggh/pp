@@ -26,7 +26,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_CUSTOM_PAT }}  # Use a custom PAT with appropriate permissions
+          GITHUB_TOKEN: ${{ secrets.ARC }}  # Use a custom PAT with appropriate permissions
         with:
           tag_name: ${{ github.sha }}
           release_name: ${{ env.COMMIT_MESSAGE }}
